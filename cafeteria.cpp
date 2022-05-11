@@ -8,8 +8,8 @@ Descripción: simular la compra de un café */
 
 using namespace std;
 
-int main(), i = 0, eleccion_leche, metodo_pago, cantidad, eleccion_cafe, aditivos(), pago(), matriz(), columnas = 0, filas = 0, otra_orden();
-float ventas[100][4], importe; 
+int main(), i = 0, eleccion_leche, cantidad, eleccion_cafe, aditivos(), pago(), matriz(), columnas = 0, filas = 0, otra_orden();
+float ventas[100][4], importe, metodo_pago; 
 string crema_batida, chispas, leche, otro_pedido;
 
 
@@ -38,7 +38,7 @@ int otra_orden()
 }
 
 
-int matriz(int eleccion_cafe, int cantidad, int importe, int metodo_pago)
+float matriz(int eleccion_cafe, int cantidad, float importe, float metodo_pago)
 {
 	ventas[columnas][0] = eleccion_cafe;
 	ventas[columnas][1] = cantidad;
